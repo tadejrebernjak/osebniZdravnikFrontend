@@ -73,3 +73,18 @@
     width: 320px;
   }
 }
+
+.u-form-checkbox > .text-help {
+  border-top: none;
+  margin-left: 20px;
+}
+
+.text-help {
+  display: block;
+  color: red;
+  border-top: 1px solid red;
+}
+
+.red-span {
+  color: red;
+}

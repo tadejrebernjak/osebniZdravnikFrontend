@@ -59,8 +59,8 @@
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
         </nav>
-        <a href="https://nicepage.com/k/quiz-html-templates" class="u-btn u-button-style u-btn-1">Vpis</a>
-        <a href="https://nicepage.com/k/quiz-html-templates" class="u-btn u-button-style u-btn-2">Registracija</a>
+        <a href="login.html" class="u-btn u-button-style u-btn-1">Vpis</a>
+        <a href="register.html" class="u-btn u-button-style u-btn-2">Registracija</a>
       </div></header> 
     <section class="u-align-center u-clearfix u-grey-10 u-section-1" id="sec-96e0">
       <div class="u-clearfix u-sheet u-sheet-1">
@@ -68,28 +68,42 @@
           <div class="u-container-layout u-valign-middle u-container-layout-1">
             <h3 class="u-text u-text-default u-text-1">Registracija</h3>
             <div class="u-form u-login-control u-form-1">
-              <form action="#" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-35 u-form-vertical u-inner-form" source="custom" name="form-2" style="padding: 10px;">
+              <form action="#" novalidate id="register-form" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-35 u-form-vertical u-inner-form" source="custom" name="form-2" style="padding: 10px;">
                 <div class="u-form-group u-form-name">
-                  <label for="username-708d" class="u-label">Uporabniško ime</label>
-                  <input type="text" placeholder="Vnesi uporabniško ime" id="username-708d" name="username" class="u-grey-5 u-input u-input-rectangle" required="">
+                  <label for="username-708d" class="u-label">Uporabniško ime <span class="red-span">*</span></label>
+                  <input type="text" placeholder="Vnesi uporabniško ime" id="username-708d" required data-pristine-required-message="Polje je obvezno" class="u-grey-5 u-input u-input-rectangle">
+                </div>
+                <div class="u-form-group u-form-email">
+                  <label for="email-708d" class="u-label">E-Pošta <span class="red-span">*</span></label>
+                  <input type="email" placeholder="Vnesi E-pošto" id="email-708d" required data-pristine-required-message="Polje je obvezno" data-pristine-email-message="Ni prava E-Pošta" name="username" class="u-grey-5 u-input u-input-rectangle">
                 </div>
                 <div class="u-form-group u-form-password">
-                  <label for="password-708d" class="u-label">Geslo</label>
-                  <input type="text" placeholder="Vnesi geslo" id="password-708d" name="password" class="u-grey-5 u-input u-input-rectangle" required="">
+                  <label for="password-708d" class="u-label">Geslo <span class="red-span">*</span></label>
+                  <input type="password" placeholder="Vnesi geslo" id="password-708d" required data-pristine-required-message="Polje je obvezno" name="password" class="u-grey-5 u-input u-input-rectangle">
+                </div>
+                <div class="u-form-group u-form-password">
+                  <label for="password-repeat-708d" class="u-label">Ponovitev gesla <span class="red-span">*</span></label>
+                  <input type="password" placeholder="Ponovi geslo" data-pristine-equals="#password-708d" data-pristine-equals-message="Gesla se ne ujemata" id="password-repeat-708d" required data-pristine-required-message="Polje je obvezno" name="password-repeat" class="u-grey-5 u-input u-input-rectangle">
+                </div>
+                <div class="u-form-group u-form-name">
+                  <label for="phone-708d" class="u-label">Telefon</label>
+                  <input type="text" placeholder="Vnesi telefonsko številko" data-pristine-pattern="/^[0-9]/" data-pristine-pattern-message="Vnesite številko" id="phone-708d" name="phone" class="u-grey-5 u-input u-input-rectangle">
                 </div>
                 <div class="u-form-checkbox u-form-group">
-                  <input type="checkbox" id="checkbox-708d" name="remember" value="On">
-                  <label for="checkbox-708d" class="u-label">Ostani prijavljen</label>
+                  <div>
+                    <input type="checkbox" id="checkbox-708d" name="agree" value="On" required data-pristine-required-message="Polje je obvezno">
+                    <label for="checkbox-708d" class="u-label">Strinjam se z blablablalbla</label>
+                  </div>
                 </div>
                 <div class="u-align-center u-form-group u-form-submit">
-                  <a href="#" class="u-btn u-btn-round u-btn-submit u-button-style u-radius-17 u-btn-1">Prijava<br>
+                  <a href="#" class="u-btn u-btn-round u-btn-submit u-button-style u-radius-17 u-btn-1">Registracija<br>
                   </a>
                   <input type="submit" value="submit" class="u-form-control-hidden">
                 </div>
                 <input type="hidden" value="" name="recaptchaResponse">
               </form>
             </div>
-            <a href="" class="u-border-1 u-border-active-palette-2-base u-border-hover-palette-1-base u-btn u-button-style u-login-control u-login-forgot-password u-none u-text-palette-1-base u-btn-2">Nimate še računa?</a>
+            <a href="login.html" class="u-border-1 u-border-active-palette-2-base u-border-hover-palette-1-base u-btn u-button-style u-login-control u-login-forgot-password u-none u-text-palette-1-base u-btn-2">Imate že račun?</a>
           </div>
         </div>
       </div>
@@ -146,17 +160,10 @@
             </div>
           </div>
         </div>
-      </div></footer>
-    <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-        <span>Website Templates</span>
-      </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="https://nicepage.com/" target="_blank">
-        <span>Website Builder Software</span>
-      </a>. 
-    </section>
+      </div>
+    </footer>
+    <!-- PRISTINE JAVASCRIPT -->
+    <script src="pristine/dist/pristine.js"></script>
+    <script src="js/register.js"></script>
   </body>
 </html>
