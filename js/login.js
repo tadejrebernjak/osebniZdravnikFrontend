@@ -6,7 +6,7 @@ window.onload = function() {
         swal({
             title: "Oops!",
             text: "Vnesli ste napačno uporabniško ime ali geslo",
-            type: "error"
+            icon: "error"
         }).then(function() {
             window.location.href = "login.html";
         });
