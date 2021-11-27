@@ -15,8 +15,10 @@ window.onload = function() {
 
 function validateForm() {
     let password = document.getElementById('password-708d').value;
+    let username = document.getElementById('username-708d').value;
 
     if (password == "123") {
+        localStorage.setItem("username", username);
         window.location.href = "index.html";
     }
     else {

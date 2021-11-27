@@ -74,7 +74,7 @@
 }
 
 .u-section-2 .u-text-1 {
-  margin: 20px auto 0;
+  margin: 100px auto 0;
 }
 
 .u-section-2 .u-list-1 {
@@ -438,18 +438,17 @@
     padding-right: 10px;
   }
 }.u-section-5 .u-sheet-1 {
-  min-height: 622px;
+  min-height: 400px;
 }
 
 .u-section-5 .u-text-1 {
   width: 680px;
-  margin: 84px auto 0;
+  margin: 40px auto 40px;
 }
 
 .u-section-5 .u-list-1 {
   grid-template-rows: auto;
   width: 1140px;
-  margin: 57px 0 60px;
 }
 
 .u-section-5 .u-repeater-1 {
@@ -790,12 +789,12 @@
 }
 
 .u-section-6 .u-text-1 {
-  margin: 20px auto 0;
+  margin: 40px auto 0px;
 }
 
 .u-section-6 .u-form-1 {
   width: 570px;
-  margin: 20px auto 40px;
+  margin: 20px auto 50px;
 }
 
 @media (max-width: 767px) {
@@ -820,4 +819,9 @@
 
 .u-layout-row {
   margin-top: 50px;
+}
+
+.u-form-send-error {
+  background-color: rgb(13, 211, 13);
+  font-size: 1.5rem;
 }
