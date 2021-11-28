@@ -17,5 +17,6 @@ window.onload = function() {
 
 function logout() {
     localStorage.removeItem('username');
+    localStorage.removeItem('applications');
     window.location.href = 'index.html';
 }
