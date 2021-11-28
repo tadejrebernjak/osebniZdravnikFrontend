@@ -1,6 +1,6 @@
 window.onload = function() {
     const logoutButton = document.getElementById('logout-button');
-    logoutButton.addEventListener('click', logout)
+    logoutButton.addEventListener('click', logout);
 
     if (localStorage.username) {
         document.getElementById('login-button').classList.remove('visible-header-button');
