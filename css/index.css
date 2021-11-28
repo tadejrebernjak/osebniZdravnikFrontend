@@ -825,3 +825,9 @@
   background-color: rgb(13, 211, 13);
   font-size: 1.5rem;
 }
+
+.offset-animation-right, .offset-animation-left {
+  transition: 2s;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
