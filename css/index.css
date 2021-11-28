@@ -80,7 +80,7 @@
 .u-section-2 .u-list-1 {
   width: 1140px;
   grid-template-rows: auto;
-  margin: 20px 0 50px;
+  margin: 20px auto 50px;
 }
 
 .u-section-2 .u-repeater-1 {
@@ -819,6 +819,7 @@
 
 .u-layout-row {
   margin-top: 50px;
+  padding: 20px;
 }
 
 .u-form-send-error {
@@ -830,4 +831,10 @@
   transition: 2s;
   margin-bottom: 100px;
   overflow: hidden;
+}
+
+.stars {
+  width: 90%;
+  max-width: 300px;
+  margin-top: 50px;
 }

@@ -5,7 +5,7 @@ var applications = JSON.parse(localStorage.getItem('applications') || "[]");
 console.log(applications);
 
 if (applications.length == 0) {
-    applicationsDisplay.innerHTML = "<h3 class='text-center text-secondary m-5'>Niste še naročeni na pregled :(</h3>";
+    applicationsDisplay.innerHTML = "<h3 class='text-center text-secondary m-5'>Niste še naročeni na pregled</h3>";
 }
 else {
     for (i = 0; i < applications.length; i++) {
@@ -18,7 +18,7 @@ else {
                     + "<h3 class='text-center align-middle m-1'>" + applications[i].time + "</h3>"
                 + "</div>"
                 + "<div class='col-6'>"
-                    + "<p class='m-0'>" + applications[i].description + "</p>"
+                    + "<p class='m-0 text-center'><span class='fw-bold'>Opis: </span>" + applications[i].description + "</p>"
                 + "</div>"
                 + "<div class='col d-flex align-items-center justify-content-center'>"
                     + "<div class='text-end'>"
