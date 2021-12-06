@@ -19,6 +19,9 @@ if (urlParams.get('date') != undefined && urlParams.get('time') != undefined) {
     document.getElementById('form-apply-button').addEventListener("click", function() {
         apply(dateDisplay);
     });
+    document.getElementById('form-back-button').addEventListener("click", function() {
+        window.history.back();
+    });
 }
 
 else if (urlParams.get('date') != undefined) {
@@ -34,6 +37,10 @@ else if (urlParams.get('date') != undefined) {
     
     document.getElementById('date-display').innerHTML = "Izbran datum: " 
     + dateDisplay;
+
+    document.getElementById('date-back-button').addEventListener("click", function() {
+        window.location.href = 'apply.html';
+    });
 }
 else {
     document.getElementById('timepicker-container').style.display = "none";
